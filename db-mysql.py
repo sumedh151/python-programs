@@ -1,29 +1,22 @@
 import mysql.connector
 
-# db=mysql.connector.connect(
-#     host="localhost",
-#     user="root",
-#     password="sumedhdg15"
-#     )
+db=mysql.connector.connect(
+     host="localhost",
+     user="root",
+     password=""
+    )
 
-# cursor=db.cursor()
+cursor=db.cursor()
 
 # CREATE NEW DATABASE
-# cursor.execute("CREATE DATABASE exp6_19")
-# db.commit()
-# cursor.execute("SHOW DATABASES")
-# for d in cursor:
-#     print(d)
-# print(" ")
+cursor.execute("CREATE DATABASE exp6_19")
+db.commit()
+cursor.execute("SHOW DATABASES")
+for d in cursor:
+    print(d)
+print(" ")
 
 # CREATE TABLES
-db=mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="sumedhdg15",
-    database="exp6_19"
-)
-cursor =db.cursor()
 
 # cursor.execute("CREATE TABLE users(UserId int primary key,Name varchar(100) NOT NULL,MobileNo numeric(10),City varchar(50) NOT NULL) ")
 
